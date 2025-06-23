@@ -39,7 +39,7 @@ public class GuestbookController extends HttpServlet {
 			request.setAttribute("gList", gList);
 
 			// *포워드
-			WebUtil.forward(request, response, "/WEB-INF/list.jsp");
+			WebUtil.forward(request, response, "/WEB-INF/lib/list.jsp");
 
 		}else if("wform".equals(action)) { //등록폼업무  (등록업무랑 구별할것)
 			System.out.println("등록폼");
